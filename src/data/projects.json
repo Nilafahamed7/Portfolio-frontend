@@ -1,0 +1,76 @@
+[
+  {
+    "id": "netflix-login",
+    "title": "Netflix Login Page",
+    "description": "Netflix Login Experience – A sleek MERN-stack clone replicating Netflix’s login flow, featuring secure authentication, responsive design, and smooth, modern UI interactions.",
+    "tech": ["React", "TailwindCSS","Node.js","Express.js","MongoDB"],
+    "category": "Frontend",
+    "liveUrl": "https://eduflix-ui.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/eduflix-ui.git",
+    "image": "/src/assets/netflix.png"
+  },
+  {
+    "id": "apple-clone",
+    "title": "Apple Clone",
+    "description": "Fully responsive Apple website UI clone built with React and TailwindCSS.",
+    "tech": ["React", "TailwindCSS"],
+    "category": "Frontend",
+    "liveUrl": "https://apple-clone-one-iota.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/Apple-clone.git",
+    "image": "/src/assets/apple.png"
+  },
+  {
+    "id": "weather-app",
+    "title": "Weather App",
+    "description": "A weather forecast app using API integration and clean UI.",
+    "tech": ["React", "API Integration"],
+    "category": "Frontend",
+    "liveUrl": "https://weather-app-ten-nu-96.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/weather-App.git",
+    "image": "/src/assets/weather.png"
+  },
+  {
+    "id": "nostra-ecommerce",
+    "title": "Nostra E-commerce",
+    "description": "An e-commerce website frontend design made with HTML, JS, and TailwindCSS.",
+    "tech": ["HTML", "JavaScript", "TailwindCSS"],
+    "category": "Frontend",
+    "liveUrl": "https://nilafahamed7.github.io/Nostra/",
+    "repoUrl": "https://github.com/Nilafahamed7/Nostra.git",
+    "image": "/src/assets/nostra.png"
+  },
+  {
+    "id": "movie-app",
+    "title": "Movie App",
+    "description": "A movie search app using TMDB API with search and filter functionality.",
+    "tech": ["React", "Rest API", "Node.js"],
+    "category": "Frontend",
+    "liveUrl": "https://movie-app-nu-gray.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/Movie-app.git",
+    "image": "/src/assets/movie.png"
+  },
+  {
+    "id": "udemy-clone",
+    "title": "Udemy Clone",
+    "description": "A frontend clone of the Udemy homepage with responsive design using React and TailwindCSS.",
+    "tech": ["React", "TailwindCSS", "Responsive Design"],
+    "category": "Frontend",
+    "liveUrl": "https://nilafahamed7.github.io/udemy-clone/",
+    "repoUrl": "https://github.com/Nilafahamed7/udemy-clone.git",
+    "image": "/src/assets/udemy.png"
+  },
+  {
+    "id": "bulk-mail",
+    "title": "Bulk Mail",
+    "description": "BulkMail Pro – A MERN-based application that sends bulk emails in one click, designed to help businesses streamline communication and reach large audiences efficiently.",
+    "tech": ["React", "TailwindCSS","Node.js","Express.js","MongoDB"],
+    "category": "Frontend",
+    "liveUrl": "https://bulkmail-frontend-khaki.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/bulkmail---frontend.git",
+    "image": "/src/assets/bulkmail.png"
+  }
+  
+]
+
+
+
