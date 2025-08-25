@@ -13,7 +13,7 @@ export default function Projects() {
       : [];
 
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500">
+    <section className="relative w-full overflow-x-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-28 -right-24 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-fuchsia-400/10 blur-3xl" />
@@ -51,7 +51,7 @@ export default function Projects() {
           {/* Grid */}
           <motion.div
             variants={fadeIn}
-            className="mt-8 grid grid-cols-1 md:[grid-template-columns:repeat(auto-fit,minmax(280px,1fr))] gap-5 md:gap-6 lg:gap-8"
+            className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8"
           >
             {sourceProjects.length > 0 ? (
               sourceProjects.map((p) => (
