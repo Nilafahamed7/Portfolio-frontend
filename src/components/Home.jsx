@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, Mail, Github, Linkedin, Sparkles, Zap, ShieldCheck, Trophy, Info, Layers } from "lucide-react";
+import { ArrowRight, Mail, Github, Linkedin,FileUserIcon, Sparkles, Zap, ShieldCheck, Trophy, Info, Layers } from "lucide-react";
 import avatar from "../assets/avatar.jpg";
 
 const fadeIn = {
@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-white to-indigo-50/40 dark:from-gray-900 dark:to-gray-950 transition-colors duration-500">
-      
+
       {/* Decorative background */}
 
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -25,7 +25,7 @@ export default function Home() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
 
           {/* Left: Content */}
-          
+
           <motion.div
             initial="hidden"
             animate="visible"
@@ -82,17 +82,27 @@ export default function Home() {
               >
                 Contact me <Mail size={18} />
               </button>
+
+              <a
+                href="/Nilaf_Ahamed_FSW_resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-indigo-600 to-fuchsia-600 px-5 py-3 text-white shadow-lg shadow-indigo-600/20 transition hover:from-indigo-700 hover:to-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              >
+                View Resume <FileUserIcon size={18} />
+              </a>
+
             </motion.div>
 
 
             {/* Socials */}
             <motion.div variants={fadeIn} className="mt-6 flex items-center gap-4">
               <a href="https://github.com/Nilafahamed7" target="_blank" rel="noopener noreferrer" title="GitHub"
-                 className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
                 <Github className="h-6 w-6" />
               </a>
               <a href="https://linkedin.com/in/nilaf-ahamed-fullstackdeveloper" target="_blank" rel="noopener noreferrer" title="LinkedIn"
-                 className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition">
                 <Linkedin className="h-6 w-6" />
               </a>
             </motion.div>

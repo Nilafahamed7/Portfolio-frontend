@@ -93,7 +93,7 @@ const Contact = () => {
 
               <div className="mt-6">
                 <a
-                  href="/Nilaf Ahamed FSW resume.pdf"
+                  href="/Nilaf_Ahamed_FSW_resume.pdf"
                   download
                   className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-4 py-2 text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400">
                   <FileDown className="h-4 w-4" /> Download Resume
