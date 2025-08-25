@@ -99,18 +99,18 @@ const About = () => {
                     "Express",
                     "MongoDB",
                     "Node.js",
-                    "TypeScript",
                     "Tailwind CSS",
                     "Framer Motion",
                     "REST APIs",
-                    "Firebase"
+                    "Firebase",
+                    "Figma",
+                    "Jwt Authentication"
                   ]
                     .concat([
                       "React",
                       "Express",
                       "MongoDB",
                       "Node.js",
-                      "TypeScript",
                       "Tailwind CSS",
                       "Framer Motion",
                       "REST APIs",
@@ -290,6 +290,8 @@ const About = () => {
                 {[
                   "Git & GitHub",
                   "Vite",
+                  "Postman",
+                  "Figma",
                   "Version Control & Collaboration",
                 ].map((tool) => (
                   <motion.li
@@ -310,6 +312,7 @@ const About = () => {
                   "Vercel",
                   "Render",
                   "Netlify",
+                  "Railway",
                 ].map((platform) => (
                   <motion.li
                     key={platform}
@@ -324,7 +327,7 @@ const About = () => {
           </div>
 
           {/* Short blurb */}
-          <motion.p variants={fadeIn} className="mt-6 max-w-3xl text-gray-600 dark:text-gray-300">
+          <motion.p variants={fadeIn} className="mt-10 text-lg max-w-3xl text-gray-600 dark:text-gray-300">
             I build fast, purposeful, and reliable interfaces using the MERN stack—rooted in solid architecture, smooth animations, and a maintainable codebase. From crafting scalable React component systems to structuring efficient MongoDB data models, I deliver quality and performance at every stage.
 
 
