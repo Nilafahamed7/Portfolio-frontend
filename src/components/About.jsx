@@ -249,7 +249,8 @@ const About = () => {
                   "Tailwind CSS",
                   "Framer Motion",
                   "Responsive & Accessible UX",
-                  "FireBase"
+                  "FireBase",
+                  "Redux"
                 ].map((skill) => (
                   <motion.li
                     key={skill}
@@ -271,6 +272,9 @@ const About = () => {
                   "MongoDB",
                   "RESTful API Development",
                   "JWT Authentication & Authorization",
+                  "Middleware & Error Handling",
+                  "Database Design & Optimization",
+                  "Testing & Debugging",
                 ].map((skill) => (
                   <motion.li
                     key={skill}
