@@ -153,13 +153,13 @@ export default function Projects() {
       : [];
 
   return (
-    <section className="relative w-full overflow-x-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500">
+    <section className="relative w-full min-h-screen overflow-x-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-28 -right-24 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-fuchsia-400/10 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 md:px-10 lg:px-16 pt-28 pb-20 md:pt-36 md:pb-28">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-10 lg:px-16 pt-20 pb-16 sm:pt-28 sm:pb-20 md:pt-36 md:pb-28">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -191,7 +191,7 @@ export default function Projects() {
           {/* Grid */}
           <motion.div
             variants={fadeIn}
-            className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-8"
+            className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 lg:gap-8"
           >
             {sourceProjects.length > 0 ? (
               sourceProjects.map((p) => (
@@ -205,9 +205,9 @@ export default function Projects() {
                 >
                   <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-purple-500 opacity-0 blur-2xl transition group-hover:opacity-20" />
 
-                  {/* ✅ Project Image (fixed for mobile) */}
+                  {/* Project Image - Mobile responsive */}
                   {p.image && (
-                    <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-2xl">
+                    <div className="relative w-full h-40 sm:h-48 md:h-56 lg:h-64 overflow-hidden rounded-t-2xl">
                       <img
                         src={p.image}
                         alt={p.title}
@@ -218,8 +218,8 @@ export default function Projects() {
                     </div>
                   )}
 
-                  <div className="relative p-5">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                  <div className="relative p-4 sm:p-5">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
                       {p.title}
                     </h3>
                     <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
@@ -270,9 +270,11 @@ export default function Projects() {
                 </motion.article>
               ))
             ) : (
-              <p className="text-gray-600 dark:text-gray-400">
-                🚧 Projects coming soon...
-              </p>
+              <div className="col-span-full flex items-center justify-center py-20">
+                <p className="text-gray-600 dark:text-gray-400 text-center">
+                  🚧 Projects coming soon...
+                </p>
+              </div>
             )}
           </motion.div>
         </motion.div>
