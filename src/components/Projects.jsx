@@ -139,7 +139,7 @@
 //     </section>
 //   );
 // }
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Github, Globe, Sparkles } from "lucide-react";
 import projectsData from "../data/projects.json";
@@ -152,8 +152,19 @@ export default function Projects() {
       ? projectsData
       : [];
 
+  // Debug logging
+  console.log("Projects component rendered");
+  console.log("Projects data:", projectsData);
+  console.log("Source projects:", sourceProjects);
+
+  useEffect(() => {
+    console.log("Projects component mounted");
+    console.log("Window width:", window.innerWidth);
+    console.log("User agent:", navigator.userAgent);
+  }, []);
+
   return (
-    <section className="relative w-full min-h-screen overflow-x-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500">
+    <section className="relative w-full min-h-screen overflow-x-hidden bg-gradient-to-b from-white to-indigo-500/40 dark:from-gray-600 dark:to-gray-950 transition-colors duration-500" style={{minHeight: '100vh', backgroundColor: 'white'}}>
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-28 -right-24 h-72 w-72 rounded-full bg-indigo-400/20 blur-3xl" />
         <div className="absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-fuchsia-400/10 blur-3xl" />
@@ -188,6 +199,22 @@ export default function Projects() {
             A showcase of clean builds, thoughtful UX, and solid engineering.
           </motion.p>
 
+          {/* Debug info for mobile */}
+          <motion.div
+            variants={fadeIn}
+            className="mt-4 p-4 bg-yellow-100 dark:bg-yellow-900/20 rounded-lg border border-yellow-300 dark:border-yellow-700"
+          >
+            <p className="text-sm text-yellow-800 dark:text-yellow-200">
+              Debug: {sourceProjects.length} projects loaded
+            </p>
+            <p className="text-sm text-yellow-800 dark:text-yellow-200 mt-2">
+              Theme: {document.documentElement.classList.contains('dark') ? 'Dark' : 'Light'}
+            </p>
+            <p className="text-sm text-yellow-800 dark:text-yellow-200 mt-2">
+              Screen: {window.innerWidth}x{window.innerHeight}
+            </p>
+          </motion.div>
+
           {/* Grid */}
           <motion.div
             variants={fadeIn}
@@ -213,6 +240,10 @@ export default function Projects() {
                         alt={p.title}
                         className="h-full w-full object-cover transition group-hover:scale-105"
                         loading="lazy"
+                        onError={(e) => {
+                          console.error(`Failed to load image: ${p.image}`);
+                          e.target.style.display = 'none';
+                        }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     </div>
