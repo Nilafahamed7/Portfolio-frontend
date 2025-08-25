@@ -7,7 +7,7 @@
     "category": "Frontend",
     "liveUrl": "https://eduflix-ui.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/eduflix-ui.git",
-    "image": "/src/assets/netflix.png"
+    "image": "/netflix.png"
   },
   {
     "id": "apple-clone",
@@ -17,7 +17,7 @@
     "category": "Frontend",
     "liveUrl": "https://apple-clone-one-iota.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/Apple-clone.git",
-    "image": "/src/assets/apple.png"
+    "image": "/apple.png"
   },
   {
     "id": "weather-app",
@@ -27,7 +27,7 @@
     "category": "Frontend",
     "liveUrl": "https://weather-app-ten-nu-96.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/weather-App.git",
-    "image": "/src/assets/weather.png"
+    "image": "/weather.png"
   },
   {
     "id": "nostra-ecommerce",
@@ -37,7 +37,7 @@
     "category": "Frontend",
     "liveUrl": "https://nilafahamed7.github.io/Nostra/",
     "repoUrl": "https://github.com/Nilafahamed7/Nostra.git",
-    "image": "/src/assets/nostra.png"
+    "image": "/nostra.png"
   },
   {
     "id": "movie-app",
@@ -47,7 +47,7 @@
     "category": "Frontend",
     "liveUrl": "https://movie-app-nu-gray.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/Movie-app.git",
-    "image": "/src/assets/movie.png"
+    "image": "/movie.png"
   },
   {
     "id": "udemy-clone",
@@ -57,7 +57,7 @@
     "category": "Frontend",
     "liveUrl": "https://nilafahamed7.github.io/udemy-clone/",
     "repoUrl": "https://github.com/Nilafahamed7/udemy-clone.git",
-    "image": "/src/assets/udemy.png"
+    "image": "/udemy.png"
   },
   {
     "id": "bulk-mail",
@@ -67,10 +67,6 @@
     "category": "Frontend",
     "liveUrl": "https://bulkmail-frontend-khaki.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/bulkmail---frontend.git",
-    "image": "/src/assets/bulkmail.png"
+    "image": "/bulkmail.png"
   }
-  
 ]
-
-
-
