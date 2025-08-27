@@ -131,6 +131,10 @@ export default function Projects() {
                           href={project.repoUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          onClick={() => {
+                            console.log(`Opening repository: ${project.repoUrl}`);
+                            console.log(`Project: ${project.title}`);
+                          }}
                           className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2 text-xs font-medium text-gray-800 shadow-sm hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900/70 dark:text-gray-100 transition"
                         >
                           <Github className="h-4 w-4" /> View code

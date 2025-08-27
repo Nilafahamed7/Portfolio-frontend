@@ -76,7 +76,7 @@
     "tech": ["React", "TailwindCSS", "Framer Motion"],
     "category": "Frontend",
     "liveUrl": "https://portfolio-frontend-topaz-ten.vercel.app/",
-    "repoUrl": "https://github.com/Nilafahamed7/Portfolio.git",
+    "repoUrl": "https://github.com/Nilafahamed7/Portfolio-frontend.git",
     "image": "/portfolio.png"
   },
   {
@@ -85,8 +85,8 @@
     "description": "A complete MERN-based e-commerce application with product management, cart, wishlist, and secure authentication.",
     "tech": ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS"],
     "category": "Fullstack",
-    "liveUrl": "https://ecommerce-frontend-pi-pied.vercel.app/",
-    "repoUrl": "https://github.com/Nilafahamed7/ecommerce-frontend.git",
+    "liveUrl": "https://e-commerce-frontend-pi-pied.vercel.app/",
+    "repoUrl": "https://github.com/Nilafahamed7/e-commerce-frontend.git",
     "image": "/ecommerce.png"
   },
   {
@@ -95,7 +95,7 @@
     "description": "A task management app built with React and TailwindCSS, featuring CRUD operations, status tracking, and smooth UI.",
     "tech": ["React", "TailwindCSS", "Node.js", "Express.js", "MongoDB"],
     "category": "Fullstack",
-    "liveUrl": "https://task-management-t1yf.vercel.app",
+    "liveUrl": "https://task-management-t1yf.vercel.app/",
     "repoUrl": "https://github.com/Nilafahamed7/Task-Manager.git",
     "image": "/taskmanager.png"
   }
